@@ -1,0 +1,178 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* A clean, modern font */
+  }
+  
+  body {
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  /* Landing Section Styles */
+#landing {
+    height: 100vh; /* Full-screen section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+  }
+  
+  #landing h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds a nice shadow for depth */
+  }
+  
+  #landing p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    max-width: 600px; /* Ensures readability for large screens */
+    color: #fff;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for text */
+  }
+  
+  #landing button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent button background */
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+  
+  #landing button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    transform: scale(1.05); /* Subtle zoom on hover */
+  }  
+  /* Aesthetic Colors & Gradients */
+  :root {
+    --primary-color: #0072ff;
+    --secondary-color: #00c6ff;
+    --text-color: #333;
+    --background-light: #f9f9f9;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 60px;
+    text-align: center;
+    background-color: var(--background-light);
+    border-radius: 15px;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .section:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+  }
+  
+  /* Headings */
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    position: relative;
+  }
+  
+  h2::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  
+  /* Flexbox Layout for Content Blocks */
+  .Languages, .projects-grid, .skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Individual Content Blocks */
+  .languages, .skill, .project-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .languages:hover, .skill:hover, .project-card:hover {
+    transform: scale(1.05); /* Smooth zoom-in effect */
+    background-color: #00aaff; /* Subtle color change on hover */
+  }
+  
+  /* Skill and Language Cards */
+  .languages, .skill {
+    font-size: 1.2rem;
+    padding: 25px;
+    letter-spacing: 0.5px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+  }
+  
+  .languages:hover, .skill:hover {
+    border: 2px solid white; /* Border effect on hover */
+  }
+  
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Contact Links */
+  #contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .languages, .skill, .project-card {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  
